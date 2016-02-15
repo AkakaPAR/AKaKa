@@ -115,6 +115,7 @@ public class ControllerClass {
     @FXML
     void Givename1(MouseEvent event) {
     	String name = new String();
+    	int newname;
     	name = (String) firstCB.getValue();
     	firstaccordeon.setText(name);
     	if(name.equals("Вихрь")){
@@ -123,6 +124,54 @@ public class ControllerClass {
     	else{
     		firstP.setText("Мощность");
     	}
+    	
+    	
+    	if(firstPtext.getText().equals("")){
+    		newname = 0;
+    	}
+    	else{
+    	   try{
+    	      name = firstPtext.getText();
+    	      newname = Integer.parseInt(name.toString());
+    	   }
+    	   catch(Exception e){
+    		   newname = 0;
+    	   }
+    	}
+    	name = Integer.toString(newname);
+    	firstPtext.setText(name);
+    	
+    	
+    	if(firstXtext.getText().equals("")){
+    		newname = 0;
+    	}
+    	else{
+    	   try{
+    	      name = firstXtext.getText();
+    	      newname = Integer.parseInt(name.toString());
+    	   }
+    	   catch(Exception e){
+    		   newname = 0;
+    	   }
+    	}
+    	name = Integer.toString(newname);
+    	firstXtext.setText(name);
+    	
+    	
+    	if(firstYtext.getText().equals("")){
+    		newname = 0;
+    	}
+    	else{
+    	   try{
+    	      name = firstYtext.getText();
+    	      newname = Integer.parseInt(name.toString());
+    	   }
+    	   catch(Exception e){
+    		   newname = 0;
+    	   }
+    	}
+    	name = Integer.toString(newname);
+    	firstYtext.setText(name);
     }
     
     @FXML
