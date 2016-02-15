@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.canvas.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="376.0" prefWidth="868.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.fxml.ControllerClass">
+   <left>
+      <Accordion prefHeight="97.0" prefWidth="379.0" BorderPane.alignment="CENTER">
+        <panes>
+          <TitledPane fx:id="firstaccordeon" animated="false" onMouseMoved="#Givename1" text="ыволдапмиыволпрывлаопт">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <ChoiceBox fx:id="firstCB" layoutX="111.0" layoutY="14.0" prefWidth="150.0" />
+                        <Label fx:id="firstP" alignment="CENTER_RIGHT" layoutX="29.0" layoutY="58.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" text="Циркуляция" textAlignment="RIGHT" />
+                        <TextField fx:id="firstPtext" layoutX="112.0" layoutY="54.0" />
+                        <Label layoutX="89.0" layoutY="95.0" text="X" />
+                        <TextField fx:id="firstXtext" layoutX="112.0" layoutY="91.0" />
+                        <TextField fx:id="firstYtext" layoutX="112.0" layoutY="129.0" />
+                        <Label layoutX="90.0" layoutY="133.0" text="Y" />
+                        <Label layoutX="24.0" layoutY="18.0" text="Особенность" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </TitledPane>
+            <TitledPane fx:id="secondaccordeon" animated="false" onMouseMoved="#Givename2" text="-----">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <ChoiceBox fx:id="secondCB" layoutX="111.0" layoutY="14.0" prefWidth="150.0" />
+                        <Label fx:id="secondP" layoutX="39.0" layoutY="58.0" text="Circulation" />
+                        <TextField fx:id="secondPtext" layoutX="112.0" layoutY="54.0" />
+                        <Label layoutX="88.0" layoutY="95.0" text="X" />
+                        <TextField fx:id="secondXtext" layoutX="112.0" layoutY="91.0" />
+                        <TextField fx:id="secondYtext" layoutX="112.0" layoutY="129.0" />
+                        <Label layoutX="88.0" layoutY="133.0" text="Y" />
+                        <Label layoutX="24.0" layoutY="18.0" text="Особенность" />
+                     </children>
+                  </AnchorPane>
+               </content>
+            </TitledPane>
+            <TitledPane fx:id="thirdaccordeon" animated="false" onMouseMoved="#Givename3" text="-----">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <ChoiceBox fx:id="thirdCB" layoutX="111.0" layoutY="14.0" prefWidth="150.0" />
+                        <Label fx:id="thirdP" layoutX="39.0" layoutY="58.0" text="Circulation" />
+                        <TextField fx:id="thirdPtext" layoutX="112.0" layoutY="54.0" />
+                        <Label layoutX="88.0" layoutY="95.0" text="X" />
+                        <TextField fx:id="thirdXtext" layoutX="112.0" layoutY="91.0" />
+                        <TextField fx:id="thirdYtext" layoutX="112.0" layoutY="129.0" />
+                        <Label layoutX="88.0" layoutY="133.0" text="Y" />
+                        <Label layoutX="24.0" layoutY="18.0" text="Особенность" />
+                     </children>
+                  </AnchorPane>
+               </content>
+            </TitledPane>
+            <TitledPane fx:id="fourthaccordeon" animated="false" onMouseMoved="#Givename4" text="-----">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <ChoiceBox fx:id="forthCB" layoutX="111.0" layoutY="14.0" prefWidth="150.0" />
+                        <Label fx:id="forthP" layoutX="39.0" layoutY="58.0" text="Circulation" />
+                        <TextField fx:id="forthPtext" layoutX="112.0" layoutY="54.0" />
+                        <Label layoutX="88.0" layoutY="95.0" text="X" />
+                        <TextField fx:id="forthXtext" layoutX="112.0" layoutY="91.0" />
+                        <TextField fx:id="forthYtext" layoutX="112.0" layoutY="129.0" />
+                        <Label layoutX="88.0" layoutY="133.0" text="Y" />
+                        <Label layoutX="24.0" layoutY="18.0" text="Особенность" />
+                     </children>
+                  </AnchorPane>
+               </content>
+            </TitledPane>
+            <TitledPane animated="false" onMouseMoved="#Givename1" text="Управление">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="169.0" prefWidth="275.0">
+                     <children>
+                        <Button fx:id="Paint" layoutX="125.0" layoutY="137.0" mnemonicParsing="false" onAction="#Paint" prefHeight="0.0" prefWidth="107.0" text="Рисовать">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Button>
+                        <TextField layoutX="104.0" layoutY="39.0" />
+                     </children>
+                  </AnchorPane>
+               </content>
+            </TitledPane>
+        </panes>
+      </Accordion>
+   </left>
+   <right>
+      <Canvas height="345.0" width="488.0" BorderPane.alignment="CENTER" />
+   </right>
+   <center>
+      <Pane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+   </center>
+</BorderPane>
