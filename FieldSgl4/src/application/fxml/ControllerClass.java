@@ -132,7 +132,7 @@ public class ControllerClass {
     	else{
     	   try{
     	      name = firstPtext.getText();
-    	      newname = Integer.parseInt(name.toString());
+    	      newname = Double.parseDouble(name.toString());
     	   }
     	   catch(Exception e){
     		   newname = 0;
@@ -141,17 +141,17 @@ public class ControllerClass {
     	name = Integer.toString(newname);
     	firstPtext.setText(name);
     	
-    	
+    	double dname;
     	if(firstXtext.getText().equals("")){
-    		newname = 0;
+    		dname = 0;
     	}
     	else{
     	   try{
     	      name = firstXtext.getText();
-    	      newname = Integer.parseInt(name.toString());
+    	      dname = Integer.parseInt(name.toString());
     	   }
     	   catch(Exception e){
-    		   newname = 0;
+    		   dname = 0;
     	   }
     	}
     	name = Integer.toString(newname);
@@ -215,6 +215,7 @@ public class ControllerClass {
     
     @FXML
     void Paint(ActionEvent event) {
+    	
     }
 
 }
