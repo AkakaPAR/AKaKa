@@ -24,6 +24,7 @@
                         <TextField fx:id="firstYtext" layoutX="112.0" layoutY="129.0" />
                         <Label layoutX="90.0" layoutY="133.0" text="Y" />
                         <Label layoutX="24.0" layoutY="18.0" text="Особенность" />
+                        <CheckBox disable="true" layoutX="112.0" layoutY="167.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="111.0" text="Свободный" />
                      </children>
                   </AnchorPane>
             </content>
@@ -40,6 +41,7 @@
                         <TextField fx:id="secondYtext" layoutX="112.0" layoutY="129.0" />
                         <Label layoutX="88.0" layoutY="133.0" text="Y" />
                         <Label layoutX="24.0" layoutY="18.0" text="Особенность" />
+                        <CheckBox disable="true" layoutX="112.0" layoutY="167.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="111.0" text="Свободный" />
                      </children>
                   </AnchorPane>
                </content>
@@ -56,6 +58,7 @@
                         <TextField fx:id="thirdYtext" layoutX="112.0" layoutY="129.0" />
                         <Label layoutX="88.0" layoutY="133.0" text="Y" />
                         <Label layoutX="24.0" layoutY="18.0" text="Особенность" />
+                        <CheckBox disable="true" layoutX="112.0" layoutY="167.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="111.0" text="Свободный" />
                      </children>
                   </AnchorPane>
                </content>
@@ -72,6 +75,7 @@
                         <TextField fx:id="forthYtext" layoutX="112.0" layoutY="129.0" />
                         <Label layoutX="88.0" layoutY="133.0" text="Y" />
                         <Label layoutX="24.0" layoutY="18.0" text="Особенность" />
+                        <CheckBox disable="true" layoutX="112.0" layoutY="167.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="111.0" text="Свободный" />
                      </children>
                   </AnchorPane>
                </content>
@@ -80,12 +84,30 @@
                <content>
                   <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="169.0" prefWidth="275.0">
                      <children>
-                        <Button fx:id="Paint" layoutX="125.0" layoutY="137.0" mnemonicParsing="false" onAction="#Paint" prefHeight="0.0" prefWidth="107.0" text="Рисовать">
+                        <Button fx:id="Paint" disable="true" layoutX="241.0" layoutY="208.0" mnemonicParsing="false" onAction="#Paint" prefHeight="0.0" prefWidth="107.0" text="Рисовать">
                            <font>
                               <Font size="14.0" />
                            </font>
                         </Button>
-                        <TextField layoutX="104.0" layoutY="39.0" />
+                        <Button fx:id="Paint1" disable="true" layoutX="127.0" layoutY="208.0" mnemonicParsing="false" onAction="#Paint" prefHeight="0.0" prefWidth="107.0" text="Сохранить">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="Paint2" disable="true" layoutX="14.0" layoutY="208.0" mnemonicParsing="false" onAction="#Paint" prefHeight="0.0" prefWidth="107.0" text="Печатать">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Button>
+                        <AnchorPane disable="true" layoutX="17.0" layoutY="22.0" prefHeight="166.0" prefWidth="329.0">
+                           <children>
+                              <TextField layoutX="86.0" layoutY="83.0" />
+                              <TextField layoutX="86.0" layoutY="42.0" />
+                              <Label layoutX="50.0" layoutY="45.0" text="по X" />
+                              <Label layoutX="51.0" layoutY="87.0" text="по Y" />
+                              <Label layoutX="130.0" layoutY="6.0" text="Шаг Сетки" />
+                           </children>
+                        </AnchorPane>
                      </children>
                   </AnchorPane>
                </content>
