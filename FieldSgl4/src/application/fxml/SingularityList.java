@@ -20,7 +20,8 @@ public class SingularityList {
    */
   public static List<SglDsc> list = new ArrayList<>();
 
-  private SingularityList() {
+  @SuppressWarnings( "javadoc" )
+  public SingularityList() {
     // Это Синглтон-класс
   }
 
