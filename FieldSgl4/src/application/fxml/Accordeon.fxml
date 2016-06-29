@@ -24,7 +24,7 @@
                         <TextField fx:id="firstYtext" layoutX="112.0" layoutY="129.0" />
                         <Label layoutX="90.0" layoutY="133.0" text="Y" />
                         <Label layoutX="24.0" layoutY="18.0" text="Особенность" />
-                        <CheckBox disable="true" layoutX="112.0" layoutY="167.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="111.0" text="Свободный" />
+                        <CheckBox fx:id="firstFree" layoutX="112.0" layoutY="167.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="111.0" text="Свободный" />
                      </children>
                   </AnchorPane>
             </content>
@@ -41,7 +41,7 @@
                         <TextField fx:id="secondYtext" layoutX="112.0" layoutY="129.0" />
                         <Label layoutX="88.0" layoutY="133.0" text="Y" />
                         <Label layoutX="24.0" layoutY="18.0" text="Особенность" />
-                        <CheckBox disable="true" layoutX="112.0" layoutY="167.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="111.0" text="Свободный" />
+                        <CheckBox fx:id="secondFree" layoutX="112.0" layoutY="167.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="111.0" text="Свободный" />
                      </children>
                   </AnchorPane>
                </content>
@@ -58,7 +58,7 @@
                         <TextField fx:id="thirdYtext" layoutX="112.0" layoutY="129.0" />
                         <Label layoutX="88.0" layoutY="133.0" text="Y" />
                         <Label layoutX="24.0" layoutY="18.0" text="Особенность" />
-                        <CheckBox disable="true" layoutX="112.0" layoutY="167.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="111.0" text="Свободный" />
+                        <CheckBox fx:id="thirdFree" layoutX="112.0" layoutY="167.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="111.0" text="Свободный" />
                      </children>
                   </AnchorPane>
                </content>
@@ -75,7 +75,7 @@
                         <TextField fx:id="fourthYtext" layoutX="112.0" layoutY="129.0" />
                         <Label layoutX="88.0" layoutY="133.0" text="Y" />
                         <Label layoutX="24.0" layoutY="18.0" text="Особенность" />
-                        <CheckBox disable="true" layoutX="112.0" layoutY="167.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="111.0" text="Свободный" />
+                        <CheckBox fx:id="fourthFree" layoutX="112.0" layoutY="167.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="111.0" text="Свободный" />
                      </children>
                   </AnchorPane>
                </content>
